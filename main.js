@@ -12,11 +12,11 @@ namavar()
 //Nama let
 let namalet = "Fahmi"
 
-//Nama const
-const namaconst ="Atep"
+//nilai const
+const nilaiconst = 70;
 
 //Menampilkam/Input
 
 console.log(namalet)
-console.log(namaconst)
+console.log(nilaiconst)
 
