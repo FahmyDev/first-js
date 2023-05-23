@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilai Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="menu2">
+        <menu>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="array.html">Array</a></li>
+        </menu>
+    </nav>
+    <div>
+        <div class="box">
+            <div class="wrapper">
+                <h1>Nilai Mahasiswa</h1>
+            </div>
+            <form action="#">
+                <div class="field">
+                    <label>Masukan Nama</label>
+                    <form id="nilai-form" action="output.html" method="GET">
+                        <label for="nama">Nama Mahasiswa</span>
+                            
+                            <input type="text" id="nama" name="nama" placeholder="Masukan Nama" required>
+                            <br>
+                            <label for="nim">NIM</span>
+                                <input type="text" id="nim" name="nim" placeholder="Masukan NIM" required>
+
+                </div>
+                <label>Mata Kuliah</label>
+                <br>
+                <select id="barang" name="barang">
+                    <option value="Kalkulus 2">Kalkulus 2</option>
+                    <option value="Pendidikan Pancasila">Pendidikan Pancasila</option>
+                    <option value="Arsitektur Komputer">Arsitektur Komputer</option>
+                    <option value="Desain Perangkat Lunak">Desain Perangkat Lunak</option>
+                    <option value="Diskrit 1">Diskrit 1</option>
+                    <option value="Struktur Data dan Algoritma">Struktur Data dan Algoritma</option>
+                    <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                    <option value="Praktik Pemrograman Komputer 2">Praktik Pemrograman Komputer 2</option>
+                    <option value="Sistem Operasi">Sistem Operasi</option>
+                    <option value="Pemrograman Komputer 2">Pemrograman Komputer 2</option>
+                </select>
+                <div class="field">
+                    <label>Nilai Akhir</label>
+                    <br>
+                    <input id="nilai" type="number" placeholder="Masukan Nilai" required>
+                    <hr>
+                    <br>
+                </div>
+                <div>
+                    <button class="buttonAnimation" type="submit">TAMPIL</button>
+                    <button class="buttonAnimation" type="reset">RESET</button>
+                </div>
+            </form>
+            <div class="hasil">hasil : </div>
+            <div class="output">
+                <div id="result" class="result" style="display: none;">
+                    <h2 id="hasil">Hasil</h2>
+                    <label>Nama:</label> <span id="result-nama" class="result-value"></span><br>
+                    <label>NIM:</label>
+                    <span id="result-nim" class="result-value"></span><br>
+                    <label>Mata Kuliah:</label> <span id="result-matkul" class="result-value"></span><br>
+                    <label>Nilai Huruf:</label> <span id="result-nilai-huruf" class="result-value"></span><br>
+                    <label>Indeks Nilai:</label> <span id="result-indeks-nilai" class="result-value"></span>
+                </div>
+            </div>
+</html>
+
+<script src="script.js"></script>
+</div>
+</body>
+
+</html>

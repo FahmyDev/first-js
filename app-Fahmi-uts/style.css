@@ -1,0 +1,146 @@
+    /* navbar */
+    menu {
+        border-radius: 3px;
+    }
+    li {
+        list-style-type: none;
+        background: linear-gradient(rgba(220, 220, 255, 0.4) 85%, rgba(255, 255, 255, 0.5) 100%);
+
+        float: left;
+        cursor: pointer;
+        padding: 3px 10px;
+        border-top: 2px solid rgba(200, 200, 255, 0.5);
+        border-bottom: 2px solid rgba(50, 50, 50, 0.4);
+    }
+
+    li:first-child {
+        border-radius: 5px 0 0 5px;
+    }
+
+    li:last-child {
+        border-radius: 0 5px 5px 0;
+    }
+
+    a {
+        display: block;
+        padding: 10px 13px;
+        font-size: 26px;
+        text-decoration: none;
+        border-radius: 5px;
+        position: relative;
+        top: 0;
+        color: #FFF;
+        transition: all .4s;
+    }
+
+    li:hover a {
+        top: -20px;
+        color: #4eacff;
+        background-color: #fff;
+        box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.7);
+        transition: all .4s;
+    }
+
+    li a:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 42%;
+        border-style: solid;
+        border-color: transparent;
+        border-width: 5px 5px 0 5px;
+        transition: all .4s;
+    }
+
+    li:hover a:after {
+        border-color: white transparent transparent transparent;
+        transition: all .4s;
+    }
+
+    .menu2 {
+        width: 350px;
+    }
+
+    .menu2 a {
+        display: inline-block;
+        margin-right: 10px;
+        font-family: georgia;
+        font-size: 14px;
+        font-style: italic;
+        text-transform: capitalize;
+    }
+
+    .menu2 li {
+        border-right: 1px solid rgba(200, 200, 255, 0.5);
+        border-left: 1px solid rgba(40, 40, 40, 0.2);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    a.fun {
+        display: none;
+    }
+
+    /* Konten */
+    body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0px;
+        background: linear-gradient(45deg, red, blue);
+    }
+
+    .box {
+        width: 500px;
+        place-items: center;
+        padding: 50px;
+        margin: 20px;
+        background: 5px white;
+        border-radius: 10px;
+    }
+
+    .buttonAnimation {
+        background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+        border: 0;
+        border-radius: 10px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system, system-u, "Segoe UI";
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.9;
+        outline: transparent;
+        padding: 0 1rem;
+        touch-action: manipulation;
+        white-space: nowrap;
+    }
+
+    .hasil {
+        text-align: center;
+    }
+
+    /* output */
+    .output {
+        text-align: center;
+        margin: 0;
+        display: flex;
+        position: absolute;
+        margin-bottom: 20%;
+    }
+
+    .result label {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .result .result-value {
+        font-weight: 400;
+        font-weight: bold;
+    }

@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <link rel="styleshhet" href="Style.css">
-    <title>TOKOPAEDI STORE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Nilai Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <hr>
-    <h1>TOKOPAEDI STORE</h1>
-    <hr>
-    <p>Selamat datang di TOKOPAEDI STORE</p>
-    <hr>
-    <p>Menu Pembelian</p>
-    <form action="proses.php" method="get">
-        <p>Nama Barang
-        <select name='Pilih'>
-          <option value='Xiaomi Redmi 5A'>Xiaomi Redmi 5A</option>
-          <option value='Xiaomi Redmi 4A'>Xiaomi Redmi 4A</option>
-          <option value='Mi Poco F4'>Mi Poco F4</option>
-          <option value='Oppo F1S'>Oppo F1S</option>
-          <option value='Vivo Y12'>Vivo Y12</option>
-        </select>
-        </p>
-        <input type='submit' name='tombol' value='kirim' />
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="me.html">Tentang</a></li>
+            <li><a href="array.html">Array</a></li>
+        </ul>
+    </div>
+    <div class="box">
+        <h1>Form Nilai Mahasiswa</h1>
+        <form id="nilai-form" action="output.html" method="GET">
+            <label for="nama">Nama Mahasiswa</span>
+                <input type="text" id="nama" name="nama" placeholder="Masukan Nama" required>
+
+                <label for="nim">NIM</span>
+                    <input type="text" id="nim" name="nim" placeholder="Masukan NIM" required>
+
+                    <label for="matkul" class="matkul">Mata Kuliah
+                        <select id="matkul" name="matkul" required>
+                            <option value="kalkulus">Kalkulus 2</option>
+                            <option value="praktik">Praktik Pemrograman 2</option>
+                            <option value="Pemrograman">Pemrograman 2</option>
+                            <option value="inggris">Bahasa Inggris</option>
+                            <option value="indonesia">Bahasa indonesia</option>
+                            <option value="arsitektur">Arsitektur Komputer</option>
+                            <option value="diskrit">Diskrit 1</option>
+                            <option value="pancasila">Pendidikan Pancasila</option>
+                            <option value="algoritma">Algoritma</option>
+                            <option value="desain">Desain Perangkat Lunak</option>
+                        </select>
+                    </label>
+                    <label for="nilai">Nilai</label><br>
+                    <input type="number" id="nilai" name="nilai" min="0" max="100" step="1" required><br><br>
+                    <button class="reset" type="reset">Reset</button><br><br>
+                    <button class="submit" type="submit">Tampil</button><br><br><br>
+    </div>
+    </form>
+    </div>
+    <div class="output">
+        <div id="result" class="result" style="display: none;">
+            <h2 id="hasil">Hasil</h2>
+            <label>Nama:</label> <span id="result-nama" class="result-value"></span><br>
+            <label>NIM:</label>
+            <span id="result-nim" class="result-value"></span><br>
+            <label>Mata Kuliah:</label> <span id="result-matkul" class="result-value"></span><br>
+            <label>Nilai Huruf:</label> <span id="result-nilai-huruf" class="result-value"></span><br>
+            <label>Indeks Nilai:</label> <span id="result-indeks-nilai" class="result-value"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-<script>
-    let namaBarang = [];
 
-    function tambahProduk() {
-        let barang = document.write("barang").value
-    }
-
-
-</script>
 </html>
