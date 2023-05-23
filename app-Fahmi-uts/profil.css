@@ -1,10 +1,24 @@
 body {
     display: flex;
-    justify-content: center;
     height: 100vh;
     margin: 0;
     padding: 1px;
     background: linear-gradient(45deg, red, blue);
+}
+
+.box {
+    position: ;
+    width: 500px;
+    place-items: center;
+    padding: 50px;
+    margin: 20px;
+    background: 5px white;
+    border-radius: 10px;
+}
+
+/* navbar */
+menu {
+    border-radius: 3px;
 }
 
 li {
@@ -82,9 +96,31 @@ li:hover a:after {
 }
 
 h1 {
-
+    text-align: center;
 }
 
 a.fun {
     display: none;
+}
+
+/* footer */
+.social-media-icon {
+    padding: 2px 3px 1px 3px;
+    background: #222;
+    color: #fff;
+    margin: 5px;
+    border-radius: 4px;
+}
+a.social-media-icon:hover{
+    background: #fff!important;
+    color: #222!important;
+}
+.facebook{
+    background:  #3c5a98!important;
+}
+.youtube{
+    background: red;
+}
+.instagram{
+    background: linear-gradient(45deg, red, blue);
 }

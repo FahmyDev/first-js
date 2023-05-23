@@ -1,6 +1,6 @@
-var NamaMhs = [];
-var TahunLahir = [];
-var HandphoneMhs = [];
+var NamaMhs = ["Bagus", "Fahmi", "Anam", "lutfi"];
+var TahunLahir = [2004, 2004, 2002,2002];
+var HandphoneMhs = [0891234567, 0891122334, 0892222222, 0855555333];
 
 var table = document.getElementById("mahasiswaTable");
 
@@ -93,5 +93,5 @@ function deleteMahasiswa(index) {
 displayData(); // Menampilkan data saat halaman dimuat
 
 // Event listener untuk form penambahan mahasiswa
-var addForm = document.getElementById("addForm");
+var addForm = document.getElementById("tambahForm");
 addForm.addEventListener("submit", addMahasiswa);
