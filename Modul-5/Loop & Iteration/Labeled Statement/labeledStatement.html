@@ -9,13 +9,18 @@
 <body>
     <head>
     <body>
-        <h1>For in</h1>
+        <h1>Labeled Statement</h1>
         <script>
-            let arr = [10, 20, 30, 40];
-            for (let index in arr) {
-                document.write(index);
-                document.write(arr[index]);
+            let str = " ";
+            let index = 0;
+            loop:
+            for (index; index < 5; index++) {
+                if (index === 4) {
+                    continue loop;
+                }
+                str = str + index;
+                document.write(str);
             }
         </script>
-</body>
+    </body>
 </html>
