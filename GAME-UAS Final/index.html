@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stylesheet" href="style.css">
     <title>Game Sederhana</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <!-- Header Logo Game , Polibang & RPL (Logo Game dan RPL Belum !!!) -->
+    <header>
+        <img src="Foto/Logo_Politbang.png" alt="Logo" width="50" height="50">
+    </header>
+
+    <!-- Tagline -->
+    <div class="tagline">
+        <h1>BElUM DIKASIH TAGLINE GAME</h1>
+    </div>
+
+    <!-- Deskripsi Game -->
+    <div class="description">
+        <p>Belum di kasih deskripsi disini</p>
+    </div>
+
+    <!-- Demonstrasi Gambar Game (Belum di kasih gambar) -->
+    <div class="imagegame">
+        <img src="#" alt="gambargame" width="50" height="50">
+    </div>
+
+    <!-- Button untuk masuk ke Game (Belum di kasih link game)-->
+    <div class="button-container">
+        <div class="button" id="gameButton">
+            <a href="#">Mulai Bermain</a>
+        </div>
+        <!-- Animasi tombol masuk ke game -->
+        <script>
+            const button = document.getElementById('gameButton');
+            button.addEventListener('mouseover', function () {
+                this.style.transform = 'scale(1.1)';
+            });
+
+            button.addEventListener('mouseout', function () {
+                this.style.transform = 'scale(1)';
+            });
+        </script>
+    </div>
 </body>
+
 </html>

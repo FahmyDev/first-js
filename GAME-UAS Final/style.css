@@ -1,0 +1,8 @@
+    /* Style untuk navigasi */
+    header {
+        background-color:black;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+  
