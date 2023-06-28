@@ -1,0 +1,155 @@
+    /* Style untuk navigasi */
+    header {
+        background-color: #333;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+  
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+  
+      nav li {
+        display: inline;
+        margin-right: 20px;
+      }
+  
+      nav li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+      }
+  
+      /* Style untuk tagline game */
+      .tagline {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 24px;
+        color: #333;
+      }
+  
+      /* Style untuk deskripsi game */
+      .description {
+        max-width: 600px;
+        margin: 20px auto;
+        text-align: center;
+        font-size: 18px;
+        color: #666;
+      }
+  
+      /* Style untuk tombol masuk ke game */
+      .button-container {
+        display: flex;
+        justify-content: center;
+      }
+  
+      .button {
+        display: inline-block;
+        padding: 12px 24px;
+        margin-top: 30px;
+        background-color: #333;
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+  
+      .button:hover {
+        background-color: #666;
+      }
+  
+      /* Style untuk footage sosial media */
+      .footage {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        max-width: 800px;
+        text-align: center;
+      }
+  
+      .social-media {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      }
+  
+      .social-media a {
+        display: inline-block;
+        margin: 0 10px;
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        line-height: 40px;
+        text-decoration: none;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+        animation: rotate 4s linear infinite;
+      }
+  
+      .social-media a:hover {
+        background-color: #666;
+      }
+  
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+  
+      /* Animasi latar belakang */
+      body {
+        background: linear-gradient(45deg, #667eea, #764ba2, #6B8DD6, #8E37D7);
+        background-size: 400% 400%;
+        animation: gradientAnimation 10s ease infinite;
+      }
+  
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+  
+      /* Style untuk footer */
+      .footer {
+        text-align: center;
+        margin-top: 50px;
+      }
+  
+      /* Style untuk tombol profil */
+      .profile-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      }
+  
+      .profile-button button {
+        padding: 12px 24px;
+        background-color: #333;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+  
+      .profile-button button:hover {
+        background-color: #666;
+      }

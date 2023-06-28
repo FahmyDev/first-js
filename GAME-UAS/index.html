@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <link rel="stylesheet" href="style.css">
+  <title>Game</title>
+</head>
+<body>
+  <header>
+    <img src="Foto/Logo_Politbang.png" alt="Logo" width="50" height="50">
+  </header>
+
+  <div class="tagline">
+    <h1>TAG LINE</h1>
+  </div>
+
+  <div class="description">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet lorem vel augue ullamcorper eleifend. Nulla facilisi. Sed vestibulum mattis tortor, sit amet bibendum nunc aliquam a. Sed nec urna rutrum, lobortis ipsum id, vestibulum neque.</p>
+  </div>
+
+  <div class="button-container">
+    <div class="button" id="gameButton">
+      <a href="#">Masuk ke Game</a>
+    </div>
+  </div>
+
+  <div class="footage">
+    <!-- Tempatkan gambar footage sosial media di sini -->
+    <div class="social-media">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <div class="profile-button">
+      <button>Profil</button>
+    </div>
+
+    <p class="aps-web">&copy; APS Web</p>
+  </div>
+
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+  <script>
+    // Animasi tombol masuk ke game
+    const button = document.getElementById('gameButton');
+    button.addEventListener('mouseover', function() {
+      this.style.transform = 'scale(1.1)';
+    });
+
+    button.addEventListener('mouseout', function() {
+      this.style.transform = 'scale(1)';
+    });
+  </script>
+</body>
+</html>
