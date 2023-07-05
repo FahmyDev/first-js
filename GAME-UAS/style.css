@@ -102,7 +102,7 @@
 
       /* Animasi latar belakang */
       body {
-        background: linear-gradient(45deg, aqua;)
+        background: linear-gradient(45deg, aqua);
         background-size: 400% 400%;
         animation: gradientAnimation 10s ease infinite;
       }
