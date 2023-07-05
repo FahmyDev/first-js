@@ -2,50 +2,94 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Sederhana</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puzzle Number</title>
+  <link rel="icon" href="Logo/Logo_Game.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 
 <body>
-    <!-- Header Logo Game , Polibang & RPL (Logo Game dan RPL Belum !!!) -->
+  <!-- Header Logo Game , Polibang & RPL (Done) -->
+  <div class="container">
     <header>
-        <img src="Foto/Logo_Politbang.png" alt="Logo" width="50" height="50">
+      <div class="logo-left">
+        <img src="Logo/Logo_Game.jpg" alt="Logo" width="50" height="50">
+      </div>
+      <div class="logo-right">
+        <img src="Logo/Logo_Politbang.png" alt="Logo" width="50" height="50">
+        <img src="Logo/Logo_RPL.png" alt="Logo" width="50" height="50">
+      </div>
     </header>
 
     <!-- Tagline -->
     <div class="tagline">
-        <h1>BElUM DIKASIH TAGLINE GAME</h1>
+      <h1>Puzzle Number</h1>
     </div>
 
     <!-- Deskripsi Game -->
     <div class="description">
-        <p>Belum di kasih deskripsi disini</p>
+      <p>Ini adalah sebuah Game Puzzle Number yang dimana kamu bisa merapikan
+        urutan nomor dengan sesuai. Sekaligus game ini untuk mengasah skill keterampilanmu dalam
+        sehari-hari yang dimuat pada game dengan Puzzle Number ini.
+        Happy Enjoy In Game.
+      </p>
     </div>
 
-    <!-- Demonstrasi Gambar Game (Belum di kasih gambar) -->
-    <div class="imagegame">
-        <img src="#" alt="gambargame" width="50" height="50">
-    </div>
-
-    <!-- Button untuk masuk ke Game (Belum di kasih link game)-->
+    <!-- Button untuk masuk ke Game (FIX)-->
     <div class="button-container">
-        <div class="button" id="gameButton">
-            <a href="#">Mulai Bermain</a>
-        </div>
-        <!-- Animasi tombol masuk ke game -->
-        <script>
-            const button = document.getElementById('gameButton');
-            button.addEventListener('mouseover', function () {
-                this.style.transform = 'scale(1.1)';
-            });
+      <div class="button" id="gameButton">
+        <a href="puzzlegambar/index.html">Mulai Bermain</a>
+      </div>
 
-            button.addEventListener('mouseout', function () {
-                this.style.transform = 'scale(1)';
-            });
-        </script>
     </div>
+    <div class="tagline"> Gambar Game </div>
+  </div>
+  <!-- Demonstrasi Gambar Game (FIX) -->
+  <div class="imageGame">
+    <img src="Logo/Gambar_Game1.png" alt="gambargame" width="500" height="400">
+    <img src="Logo/Gambar_Game2.png" alt="gambargame" idth="500" height="400">
+    <img src="Logo/Gambar_Game3.png" alt="gambargame" idth="500" height="400">
+  </div>
+  <!-- Demonstrasi Video Game -->
+  </div>
+  <div class="tagline"> Demo Game </div>
+  </div>
+  <div class="imageGame">
+    <video width="640" height="360" controls>
+      <source src="logo/Game-Sederhana.webm" type="video/webm">
+      Browser Anda tidak mendukung pemutaran video.
+    </video>
+  </div>
+  <footer class="footer-container">
+    <div class="left-section">
+      <div class="social-media-buttons">
+        <a href="https://web.facebook.com/racveer.khan/?locale=ms_MY&_rdc=1&_rdr" class="btn btn-primary btn-facebook">
+          <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCVCLHZalFrQ_mWMC_DZoF3g" class="social-media-icon youtube">
+          <i class="fab fa-youtube"></i> Youtube
+        </a>
+
+        <a href="https://www.instagram.com/fahmycreative_/" class="btn btn-primary btn-instagram">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </div>
+    </div>
+    <div class="center-section">
+      <button onclick="goToIndex()" class="profile-button">Profil Developer</button>
+      <script>
+        function goToIndex() {
+          window.location.href = "profilDev.html";
+        }
+      </script>
+    </div>
+    <div class="right-section">
+      <span class="copyright">© APS-Web By Fahmy </span>
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -61,7 +61,7 @@
       }
   
       .button:hover {
-        background-color: #666;
+        background-color:#333
       }
   
       /* Style untuk footage sosial media */
@@ -99,33 +99,14 @@
         background-color: #666;
       }
   
-      @keyframes rotate {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-  
+
       /* Animasi latar belakang */
       body {
-        background: linear-gradient(45deg, #667eea, #764ba2, #6B8DD6, #8E37D7);
+        background: linear-gradient(45deg, aqua;)
         background-size: 400% 400%;
         animation: gradientAnimation 10s ease infinite;
       }
-  
-      @keyframes gradientAnimation {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
+
   
       /* Style untuk footer */
       .footer {

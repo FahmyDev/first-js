@@ -1,8 +1,189 @@
+    .imageGame {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     /* Style untuk navigasi */
     header {
-        background-color:black;
-        padding: 20px;
-        display: flex;
-        align-items: center;
+      background-color: transparent;
+      justify-content: space-between;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* Style untuk tagline game */
+    .tagline {
+      font-family: "Arial", sans-serif;
+      color:#fff;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 24px;
+    }
+
+    /* Style untuk deskripsi game */
+    .description {
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: center;
+      font-size: 18px;
+      color:aliceblue;
+    }
+
+    /* Style untuk tombol masuk ke game */
+    .button-container {
+      display: flex;
+      justify-content: center;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
       }
-  
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-top: 30px;
+      background-color: midnightblue;
+      font-size: 20px;
+      font-family: Arial;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      animation: pulse 1s infinite;
+    }
+    
+    .button:hover {
+      background-color:aqua
+    }
+    a {
+      color: #fff;
+    }
+
+    /* Style untuk footage sosial media */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .social-media a {
+      display: inline-block;
+      margin: 0 10px;
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      line-height: 40px;
+      text-decoration: none;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+      animation: rotate 4s linear infinite;
+    }
+
+    .social-media a:hover {
+      background-color: #666;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Animasi latar belakang */
+    body {
+      background: linear-gradient(45deg, #667eea, #764ba2, #6B8DD6, #8E37D7, aquamarine);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s ease infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      padding: 10px;
+    }
+    
+    .left-section {
+      flex: 1;
+    }
+    
+    .center-section {
+      flex: 1;
+      text-align: center;
+    }
+    
+    .profile-button {
+      padding: 8px 16px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .profile-button:hover {
+      background-color: aquamarine;
+    }
+    
+    .right-section {
+      flex: 1;
+      text-align: right;
+    }
+    
+    .copyrigth {
+      font-size: 14px;
+      color: #666;
+    }
+    
+    
